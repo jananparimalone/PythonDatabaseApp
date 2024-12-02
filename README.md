@@ -6,6 +6,7 @@ Description:
 - Dataset (Tables, Attributes):
 - The code interacts with a MySQL database. It references a table named
 "LogIn_Credential" with at least three attributes: "usernames," "password," and a role- related attribute, which is used to determine the user's role. Additionally, other tables have columns that designate various attributes.
+
 Operation Flow of the Project:
 1. The user launches the application, which opens the WelcomeScreen.
 2. The WelcomeScreen prompts the user for a username and password.
