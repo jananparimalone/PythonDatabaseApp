@@ -18,14 +18,15 @@ opens the SelectTableScreen.
 select a table to work with.
 6. Once a table is selected a window displaying that table opens
 7. The user can select the x in the top left corner of the window to exit
+
 Implementation:
-- The code uses PyQt5 for creating the GUI.
-- It establishes a connection to a MySQL database using the provided credentials (HOST,
-PASSWORD, DATABASE).
-- The WelcomeScreen class handles user authentication, including checking if the username and
-password fields are empty and verifying the credentials in the "LogIn_Credential" table.
-- The SelectTableScreen class populates a dropdown widget with table names from the database, based on the user's role.
-- The ViewTable class opens the table for the user to view with a Select statement from MySQL
-- The main part of the code initializes the application, sets up the GUI with the WelcomeScreen,
-and allows the user to navigate to the SelectTableScreen upon successful login.
-The code provided is the foundation for an application that aims to provide a GUI for interacting with a MySQL database. It focuses on user authentication and role-based access to database tables. However, it's worth noting that the code is a partial implementation and lacks details on how users can interact/update the selected database tables. Additional features such as editing and viewing data within the tables would need to be added to make it a fully functional database management tool.
+  - The code uses PyQt5 for creating the GUI.
+  - It establishes a connection to a MySQL database using the provided credentials (HOST,
+  PASSWORD, DATABASE).
+  - The WelcomeScreen class handles user authentication, including checking if the username and
+  password fields are empty and verifying the credentials in the "LogIn_Credential" table.
+  - The SelectTableScreen class populates a dropdown widget with table names from the database, based on the user's role.
+  - The ViewTable class opens the table for the user to view with a Select statement from MySQL
+  - The main part of the code initializes the application, sets up the GUI with the WelcomeScreen,
+  and allows the user to navigate to the SelectTableScreen upon successful login.
+  The code provided is the foundation for an application that aims to provide a GUI for interacting with a MySQL database. It focuses on user authentication and role-based access to database tables. However, it's worth noting that the code is a partial implementation and lacks details on how users can interact/update the selected database tables. Additional features such as editing and viewing data within the tables would need to be added to make it a fully functional database management tool.
